@@ -81,3 +81,34 @@ left: 525px;
 top: 210px;
 
 background: #FCFCFC;
+
+/* Mask Group */
+
+position: absolute;
+width: 630px;
+height: 640px;
+left: 810px;
+top: 177px;
+
+
+
+/* Vector 1 */
+
+position: absolute;
+width: 630px;
+height: 640px;
+left: 810px;
+top: 177px;
+
+background: #C4C4C4;
+
+
+/* image 1 */
+
+position: absolute;
+width: 1273.82px;
+height: 720.07px;
+left: 448.8px;
+top: 124.4px;
+
+background: url(image.png);

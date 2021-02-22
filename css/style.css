@@ -29,5 +29,10 @@ body header .header__mainText {
   height: 115px;
   left: 110px;
   top: 190px;
-  user-select: all;
+}
+body header .header__mainText .header__subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #FCFCFC;
+  margin: 0 5px;
 }
