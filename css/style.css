@@ -30,6 +30,15 @@ body header .header__mainText {
   left: 110px;
   top: 190px;
 }
+body header .header__mainText .header__image {
+  overflow: hidden;
+}
+body header .header__mainText .header__image .header__gamepad {
+  width: 520px;
+  position: absolute;
+  left: 800px;
+  top: 10px;
+}
 body header .header__mainText .header__subtitle {
   font-size: 20px;
   font-weight: 600;
