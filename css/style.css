@@ -2,4 +2,32 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+* ::selection {
+  background-color: #FCFCFC;
+  color: #242424;
+}
+
+body {
+  background-color: #363636;
+}
+body header .header__text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 15px 25px;
+  color: #FCFCFC;
+  user-select: none;
+}
+body header .header__mainText {
+  position: absolute;
+  width: 525px;
+  height: 115px;
+  left: 110px;
+  top: 190px;
+  user-select: all;
 }

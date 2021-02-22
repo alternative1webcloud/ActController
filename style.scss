@@ -1,5 +1,41 @@
+// Палитра
+$textColor: #FCFCFC;
+$mainColor: #363636;
+$extraColor1: #242424;
+$extraColor2: #000000;
+//
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    ::selection {
+        background-color: $textColor;
+        color: $extraColor1;
+    }
+}
+
+body {
+    background-color: $mainColor;
+    header {
+        .header__text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            margin: 15px 25px;
+            color: $textColor;
+            user-select: none;
+        }
+        .header__mainText {
+            position: absolute;
+            width: 525px;
+            height: 115px;
+            left: 110px;
+            top: 190px;
+            user-select: all;
+        }
+    }
 }
