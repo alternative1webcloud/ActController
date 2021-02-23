@@ -112,3 +112,21 @@ left: 448.8px;
 top: 124.4px;
 
 background: url(image.png);
+
+/* WhyUHere */
+
+position: absolute;
+width: 314px;
+height: 44px;
+left: 700px;
+top: 817px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 44px;
+/* identical to box height */
+
+color: #FCFCFC;
+

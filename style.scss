@@ -4,6 +4,10 @@ $mainColor: #363636;
 $extraColor1: #242424;
 $extraColor2: #000000;
 //
+@mixin userSelect {
+    user-select: none;
+}
+// 
 * {
     margin: 0;
     padding: 0;
@@ -46,6 +50,7 @@ body {
                     top: -71px;
                     margin: 69px 0 4px 50px;
                     overflow: hidden;
+                    @include userSelect;
                 }
             }
             .header__subtitle {
@@ -83,8 +88,7 @@ body {
                             &:hover {
                                 background-color: $textColor;
                                 color: $extraColor1;
-                                transition: .3s cubic-bezier(.34,.64,.87,.53);
-                            }
+                                transition: .3s cubic-bezier(.17,.67,.83,.67);                           }
                         }
                         .header__nav_main {
                             background-color: $textColor;
@@ -95,13 +99,49 @@ body {
                             &:hover {
                                 background-color: $extraColor1;
                                 color: $textColor;
-                                transition: .3s cubic-bezier(.34,.64,.87,.53);
-                            }
+                                transition: .3s cubic-bezier(.17,.67,.83,.67);                           }
                         }
                     }
                 }
             }
         }
-        
+    }
+    main {
+        .main__block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .main__image {
+                width: 307px;
+                height: 342px;
+                position: absolute;
+                z-index: -2;
+                top: 500px;
+                left: -200px;
+                margin: 69px 0 4px 50px;
+                @include userSelect()
+            }
+            .main__text {
+                .main__title {
+                    position: absolute;
+                    width: 314px;
+                    height: 44px;
+                    left: 700px;
+                    top: 817px;
+                    margin: 4px 15px 16px 16px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: $textColor;
+                }
+                .main__info {
+
+                }
+            }
+        }
     }
 }

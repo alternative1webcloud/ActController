@@ -42,6 +42,7 @@ body header .header__mainText .header__image .header__gamepad {
   top: -71px;
   margin: 69px 0 4px 50px;
   overflow: hidden;
+  user-select: none;
 }
 body header .header__mainText .header__subtitle {
   font-size: 20px;
@@ -80,7 +81,7 @@ body header .header__mainText .header__nav ul li a {
 body header .header__mainText .header__nav ul li a:hover {
   background-color: #FCFCFC;
   color: #242424;
-  transition: 0.3s cubic-bezier(0.34, 0.64, 0.87, 0.53);
+  transition: 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 body header .header__mainText .header__nav ul li .header__nav_main {
   background-color: #FCFCFC;
@@ -92,5 +93,36 @@ body header .header__mainText .header__nav ul li .header__nav_main {
 body header .header__mainText .header__nav ul li .header__nav_main:hover {
   background-color: #242424;
   color: #FCFCFC;
-  transition: 0.3s cubic-bezier(0.34, 0.64, 0.87, 0.53);
+  transition: 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+body main .main__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .main__block .main__image {
+  width: 307px;
+  height: 342px;
+  position: absolute;
+  z-index: -2;
+  top: 500px;
+  left: -200px;
+  margin: 69px 0 4px 50px;
+  user-select: none;
+}
+body main .main__block .main__text .main__title {
+  position: absolute;
+  width: 314px;
+  height: 44px;
+  left: 700px;
+  top: 817px;
+  margin: 4px 15px 16px 16px;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #FCFCFC;
 }
