@@ -18,10 +18,11 @@ body header .header__text {
   font-size: 18px;
   display: flex;
   flex-direction: row;
+  margin: 5px 5px;
   gap: 1rem;
-  margin: 15px 25px;
   color: #FCFCFC;
   user-select: none;
+  overflow: hidden;
 }
 body header .header__mainText {
   position: absolute;
@@ -29,6 +30,7 @@ body header .header__mainText {
   height: 115px;
   left: 110px;
   top: 190px;
+  margin: 14px 29px 19px 55px;
 }
 body header .header__mainText .header__image {
   overflow: hidden;
@@ -36,14 +38,21 @@ body header .header__mainText .header__image {
 body header .header__mainText .header__image .header__gamepad {
   width: 520px;
   position: absolute;
-  left: 800px;
-  top: 10px;
+  left: 688px;
+  top: -71px;
+  margin: 69px 0 4px 50px;
+  overflow: hidden;
 }
 body header .header__mainText .header__subtitle {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
   color: #FCFCFC;
-  margin: 40px 5px 40px 0px;
+  margin: 19px 11px 32px 0;
 }
 body header .header__mainText .header__nav ul {
   display: flex;
@@ -55,12 +64,18 @@ body header .header__mainText .header__nav ul li {
 }
 body header .header__mainText .header__nav ul li a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
   background-color: #242424;
   color: #FCFCFC;
-  padding: 10px 20px;
-  border-radius: 10px;
+  margin: 32px 36px 52px 5px;
+  padding: 10px 17px;
+  border-radius: 8px;
 }
 body header .header__mainText .header__nav ul li a:hover {
   background-color: #FCFCFC;
@@ -70,6 +85,9 @@ body header .header__mainText .header__nav ul li a:hover {
 body header .header__mainText .header__nav ul li .header__nav_main {
   background-color: #FCFCFC;
   color: #242424;
+  margin: 32px 12px 52px 0;
+  padding: 10px 22px;
+  border-radius: 8px;
 }
 body header .header__mainText .header__nav ul li .header__nav_main:hover {
   background-color: #242424;
