@@ -122,24 +122,54 @@ body {
                 @include userSelect()
             }
             .main__text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 .main__title {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     position: absolute;
                     width: 314px;
                     height: 44px;
                     left: 700px;
                     top: 817px;
                     margin: 4px 15px 16px 16px;
-                    font-size: 18px;
+                    font-size: 20px;
                     font-weight: bold;
                     font-stretch: normal;
                     font-style: normal;
                     line-height: normal;
                     letter-spacing: normal;
-                    text-align: left;
+                    text-align: center;
                     color: $textColor;
                 }
                 .main__info {
-
+                    position: absolute;
+                    top: 867px;
+                    left: 700px;
+                    p {
+                        font-size: 18px;
+                        font-weight: 500;
+                        width: 600px;
+                        color: $textColor;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        margin: 19px 11px 32px 0;
+                    }
+                    ul {
+                        margin-top: 10px;
+                        li {
+                            list-style-type: disc;
+                            font-weight: bold;
+                            margin-left: 14px;
+                            margin-top: 10px;
+                            margin-right: 10px;
+                            color: $textColor;
+                        }
+                    }
                 }
             }
         }
