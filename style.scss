@@ -85,6 +85,7 @@ body {
                             margin: 32px 36px 52px 5px;
                             padding: 10px 17px;
                             border-radius: 8px;
+                            transition: .3s cubic-bezier(.17,.67,.83,.67);
                             &:hover {
                                 background-color: $textColor;
                                 color: $extraColor1;
@@ -96,6 +97,7 @@ body {
                             margin: 32px 12px 52px 0;
                             padding: 10px 22px;
                             border-radius: 8px;
+                            transition: .3s cubic-bezier(.17,.67,.83,.67);
                             &:hover {
                                 background-color: $extraColor1;
                                 color: $textColor;
@@ -168,7 +170,47 @@ body {
                             margin-top: 10px;
                             margin-right: 10px;
                             color: $textColor;
+                            transition: .5s ease-in-out;
+                            &:hover {
+                                transform: translateX(10px);
+                                transition: .5s ease-in-out;
+                            }
+                            &:after {
+                                transform: translateX(0px);
+                                transition: .5s ease-in-out;
+                            }
                         }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        ::selection {
+            background-color: $mainColor;
+            color: $textColor;
+        }
+        position: absolute;
+        top: 1500px;
+        background-color: $textColor; //Контрастный футер :)
+        width: 100%;
+        height: 200px;
+        .footer__main {
+            margin: 20px;
+            padding: 10px;
+            .footer__title {
+                p {
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+            .footer__nav {
+                .footer__link {
+                    list-style-type: none;
+                    a {
+                        text-decoration: none;
+                        color: $mainColor;
                     }
                 }
             }
