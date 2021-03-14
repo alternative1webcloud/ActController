@@ -74,8 +74,8 @@ body header .header__mainText .header__nav ul li a {
   text-align: left;
   background-color: #242424;
   color: #FCFCFC;
-  margin: 32px 36px 52px 5px;
-  padding: 10px 17px;
+  margin: 32px 0 0 0;
+  padding: 10px 22px;
   border-radius: 8px;
   transition: 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
@@ -87,7 +87,7 @@ body header .header__mainText .header__nav ul li a:hover {
 body header .header__mainText .header__nav ul li .header__nav_main {
   background-color: #FCFCFC;
   color: #242424;
-  margin: 32px 12px 52px 0;
+  margin: 32px 0 0 0;
   padding: 10px 22px;
   border-radius: 8px;
   transition: 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
@@ -161,6 +161,7 @@ body main .main__block .main__text .main__info ul li {
   margin-left: 14px;
   margin-top: 10px;
   margin-right: 10px;
+  width: 170px;
   color: #FCFCFC;
   transition: 0.5s ease-in-out;
 }
@@ -177,7 +178,6 @@ body footer {
   top: 1500px;
   background-color: #FCFCFC;
   width: 100%;
-  height: 200px;
 }
 body footer ::selection {
   background-color: #363636;
@@ -191,11 +191,5 @@ body footer .footer__main .footer__title p {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-}
-body footer .footer__main .footer__nav .footer__link {
-  list-style-type: none;
-}
-body footer .footer__main .footer__nav .footer__link a {
-  text-decoration: none;
   color: #363636;
 }

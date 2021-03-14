@@ -82,8 +82,8 @@ body {
                             text-align: left;
                             background-color: $extraColor1;
                             color: $textColor;
-                            margin: 32px 36px 52px 5px;
-                            padding: 10px 17px;
+                            margin: 32px 0 0 0;
+                            padding: 10px 22px;
                             border-radius: 8px;
                             transition: .3s cubic-bezier(.17,.67,.83,.67);
                             &:hover {
@@ -94,7 +94,7 @@ body {
                         .header__nav_main {
                             background-color: $textColor;
                             color: $extraColor1;
-                            margin: 32px 12px 52px 0;
+                            margin: 32px 0 0 0;
                             padding: 10px 22px;
                             border-radius: 8px;
                             transition: .3s cubic-bezier(.17,.67,.83,.67);
@@ -169,6 +169,7 @@ body {
                             margin-left: 14px;
                             margin-top: 10px;
                             margin-right: 10px;
+                            width: 170px;
                             color: $textColor;
                             transition: .5s ease-in-out;
                             &:hover {
@@ -194,7 +195,7 @@ body {
         top: 1500px;
         background-color: $textColor; //Контрастный футер :)
         width: 100%;
-        height: 200px;
+        // height: 200px;
         .footer__main {
             margin: 20px;
             padding: 10px;
@@ -203,15 +204,7 @@ body {
                     font-size: 18px;
                     font-weight: bold;
                     text-align: center;
-                }
-            }
-            .footer__nav {
-                .footer__link {
-                    list-style-type: none;
-                    a {
-                        text-decoration: none;
-                        color: $mainColor;
-                    }
+                    color: $mainColor;
                 }
             }
         }
