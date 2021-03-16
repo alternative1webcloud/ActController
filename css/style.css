@@ -163,19 +163,69 @@ body main .main__block .main__text .main__info ul li {
   margin-right: 10px;
   width: 170px;
   color: #FCFCFC;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 body main .main__block .main__text .main__info ul li:hover {
   transform: translateX(10px);
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 body main .main__block .main__text .main__info ul li:after {
   transform: translateX(0px);
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+body .slider {
+  position: absolute;
+  top: 1400px;
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+body .slider .slider__title {
+  color: #FCFCFC;
+  margin: 40px;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .slider .slider__wrapper {
+  width: 80%;
+  align-items: center;
+  margin-left: auto;
+}
+body .slider .slider__wrapper .slider__body {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+body .slider .slider__wrapper .slider__body .slider__slide {
+  width: 300px;
+  height: 200px;
+  margin-left: 200px;
+  padding: 40px 40px 40px 100px;
+  background-color: #242424;
+  color: #FCFCFC;
+  border-radius: 20px;
+}
+body .slider .slider__wrapper .slider__body .slider__slide .slider__button {
+  background-color: #FCFCFC;
+  color: #242424;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 12px 0 0 0;
+  padding: 5px 11px;
+  border-radius: 8px;
+  transition: 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+body .slider .slider__wrapper .slider__body .slider__slide .slider__button:hover {
+  background-color: #242424;
+  color: #FCFCFC;
+  transition: 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 body footer {
   position: absolute;
-  top: 1500px;
+  top: 2000px;
   background-color: #FCFCFC;
   width: 100%;
 }
