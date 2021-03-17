@@ -1,7 +1,7 @@
 // Палитра
 $textColor: #FCFCFC;
-$mainColor: #363636;
-$extraColor1: #242424;
+$mainColor: #242424;
+$extraColor1: #363636;
 $extraColor2: #000000;
 //
 @mixin userSelect {
@@ -199,25 +199,31 @@ body {
             align-items: center;
             margin-left: auto;
             margin-right: auto;
+            font-weight: 500;
         }
         .slider__wrapper {
-            width: 80%;
+            width: 100%;
             align-items: center;
-            margin-left: auto;
             .slider__body {
                 align-items: center;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 grid-gap: 10px;
+                margin-left: 110px;
+                margin-right: 0;
+                overflow-x: scroll;
+                scrollbar-width: thin;
+                scrollbar-color: $extraColor1 $mainColor;
+                border-radius: 20px;
                 .slider__slide {
-                    width: 300px;
-                    height: 200px;
-                    margin-left: 200px;
+                    width: 512px;
+                    height: 210px;
                     padding: 40px 40px 40px 100px;
                     background-color: $extraColor1;
                     color: $textColor;
                     border-radius: 20px;
                     .slider__button {
+                        font-size: 14px;
                         background-color: $textColor;
                         color: $extraColor1;
                         text-decoration: none;
@@ -227,11 +233,17 @@ body {
                         border-radius: 8px;
                         transition: .3s cubic-bezier(.17,.67,.83,.67);
                         &:hover {
-                            background-color: $extraColor1;
+                            background-color: $mainColor;
                             color: $textColor;
                             transition: .3s cubic-bezier(.17,.67,.83,.67); 
                         }
                     }
+                }
+                .slider__body::-webkit-scrollbar-thumb {
+                    border-radius:20%;
+                }
+                .slider__slide:nth-child(1), .slider__slide:nth-child(5) {
+                    margin-left: 32px;
                 }
             }
         }
