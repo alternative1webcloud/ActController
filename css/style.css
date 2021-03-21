@@ -6,6 +6,15 @@
   scrollbar-width: thin;
   scrollbar-color: #c4c4c45b #242424;
 }
+* ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: #242424;
+}
+* ::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #c4c4c45b;
+}
 * ::selection {
   background-color: #FCFCFC;
   color: #363636;
@@ -233,8 +242,8 @@ body .slider .slider__wrapper .slider__body .slider__slide .slider__button {
   color: #363636;
   text-decoration: none;
   font-weight: bold;
-  margin-left: 180px;
-  margin-right: 40px;
+  margin-left: 160px;
+  margin-right: 20px;
   padding: 5px 21px;
   border-radius: 8px;
   transition: 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);

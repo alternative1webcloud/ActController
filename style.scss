@@ -9,17 +9,27 @@ $scrollbarColor: #c4c4c45b;
     user-select: none;
 }
 
-@mixin scrollbar {
+@mixin scrollbarFF {
     scrollbar-width: thin;
     scrollbar-color: $scrollbarColor $mainColor;
 }
+
 // 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    @include scrollbar;
+    @include scrollbarFF;
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+        background-color: $mainColor;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: $scrollbarColor;
+    }
     ::selection {
         background-color: $textColor;
         color: $extraColor1;
@@ -247,8 +257,8 @@ body {
                         color: $extraColor1;
                         text-decoration: none;
                         font-weight: bold;
-                        margin-left: 180px;
-                        margin-right: 40px;
+                        margin-left: 160px;
+                        margin-right: 20px;
                         padding: 5px 21px;
                         border-radius: 8px;
                         transition: .3s cubic-bezier(.17,.67,.83,.67);
