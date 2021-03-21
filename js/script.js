@@ -1,9 +1,9 @@
-import Swiper from 'swiper/bundle'
+const swiper = new Swiper('.slider__wrapper', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
 
-const swiper = new Swiper('.swiper__container', {
-    direction: 'horizontal',
-    loop: true,
-    scrollbar: {
-        el: '.swiper__scrollbar'
-    }
-})
+  scrollbar: {
+    el: '.slider__scrollbar',
+  },
+});

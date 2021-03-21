@@ -3,9 +3,15 @@ $textColor: #FCFCFC;
 $mainColor: #242424;
 $extraColor1: #363636;
 $extraColor2: #000000;
+$scrollbarColor: #c4c4c45b;
 //
 @mixin userSelect {
     user-select: none;
+}
+
+@mixin scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: $scrollbarColor $mainColor;
 }
 // 
 * {
@@ -13,6 +19,7 @@ $extraColor2: #000000;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    @include scrollbar;
     ::selection {
         background-color: $textColor;
         color: $extraColor1;
@@ -28,7 +35,7 @@ body {
             font-size: 18px;
             display: flex;
             flex-direction: row;
-            margin: 5px 5px;
+            margin: 5px 5px 5px 7px;
             gap: 1rem;
             color: $textColor;
             user-select: none;
@@ -212,38 +219,51 @@ body {
                 margin-left: 110px;
                 margin-right: 0;
                 overflow-x: scroll;
-                scrollbar-width: thin;
-                scrollbar-color: $extraColor1 $mainColor;
                 border-radius: 20px;
                 .slider__slide {
-                    width: 512px;
+                    width: 380px;
                     height: 210px;
-                    padding: 40px 40px 40px 100px;
+                    padding: 40px 40px 40px 40px;
                     background-color: $extraColor1;
                     color: $textColor;
                     border-radius: 20px;
+                    h5 {
+                        font-size: 20px;
+                        padding: 3px;
+                        text-align: left;
+                    }
+                    p {
+                        font-size: 16px;
+                        padding-left: 0;
+                        padding-top: 5px;
+                        padding-bottom: 30px;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                        text-align: left;
+                    }
                     .slider__button {
                         font-size: 14px;
                         background-color: $textColor;
                         color: $extraColor1;
                         text-decoration: none;
                         font-weight: bold;
-                        margin: 12px 0 0 0;
-                        padding: 5px 11px;
+                        margin-left: 180px;
+                        margin-right: 40px;
+                        padding: 5px 21px;
                         border-radius: 8px;
                         transition: .3s cubic-bezier(.17,.67,.83,.67);
                         &:hover {
                             background-color: $mainColor;
                             color: $textColor;
-                            transition: .3s cubic-bezier(.17,.67,.83,.67); 
+                            transition: .3s cubic-bezier(.17,.67,.83,.67);
                         }
                     }
                 }
-                .slider__body::-webkit-scrollbar-thumb {
-                    border-radius:20%;
-                }
-                .slider__slide:nth-child(1), .slider__slide:nth-child(5) {
-                    margin-left: 32px;
+                .slider__slide:nth-child(5),
+                .slider__slide:nth-child(6),
+                .slider__slide:nth-child(7),
+                .slider__slide:nth-child(8) {
+                    margin-bottom: 10px;
                 }
             }
         }
@@ -254,7 +274,7 @@ body {
             color: $textColor;
         }
         position: absolute;
-        top: 2000px;
+        top: 2200px;
         background-color: $textColor; //Контрастный футер :)
         width: 100%;
         // height: 200px;
@@ -269,6 +289,30 @@ body {
                     color: $mainColor;
                 }
             }
+            .footer__info {
+                a {
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: $extraColor1;
+                    margin: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 1s ease-in-out;
+                    &:hover {
+                        text-decoration: underline;
+                        transition: 1s ease-in-out;
+                    }
+                }
+            }
         }
     }
 }
+
+
